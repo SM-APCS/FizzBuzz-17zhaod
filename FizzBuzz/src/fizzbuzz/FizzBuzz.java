@@ -13,25 +13,39 @@ package fizzbuzz;
 public class FizzBuzz {
 
     /**
-     * @param args the command line arguments
+     * @param int The number that is being tested
+     * @param counter Act as the counter in the for loop
      */
     public static void main(String[] args) {
-        int i=1;
-        for(int counter = 0;counter<100;counter++)
+    	// initialize variables
+        int i = 1;
+        int counter = 0;
+        
+        //loop from 1 to 100 to test integers i
+        for(counter = 0;counter<100;counter++)
         {
+        	//tests 3
         	if(i%3==0)
         	{
         		System.out.print("Fizz");
         	}
+        	
+        	//then tests 5
         	if(i%5==0)
         	{
         		System.out.print("Buzz");
         	}
+        	
+        	//if neither work
         	if(i%3!=0 && i%5!=0)
         	{
         		System.out.print(i);
         	}
+        	
+        	//prints to new line
         	System.out.println("");
+        	
+        	//increases counter by 1
         	i++;
         }
     }
